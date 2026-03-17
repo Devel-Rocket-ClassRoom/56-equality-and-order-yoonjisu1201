@@ -124,7 +124,7 @@ class BadItem
     }
     
 }
-**/
+
 //6.
 List<Monster> monsters = new List<Monster>
 {
@@ -140,7 +140,7 @@ foreach (var item in monsters)
     Console.WriteLine($"   {item}");
 }
 
-monsters.Sort();
+monsters.Sort();  //크기를 비교해서 정렬하는 기능 >> CompareTo 재정의로 크기 비교 기준을 바꿈
 Console.WriteLine("정렬 후:");
 foreach (var item in monsters)
 {
@@ -169,6 +169,14 @@ class Monster : IComparable<Monster>
     {
         return $"{Name}(전투력: {Power})";
     }
+}
+*/
+//7.
+
+
+class Student : IComparable<student>
+{
+
 }
 
 
